@@ -1,0 +1,55 @@
+{
+	"name": "winnie-editor",
+	"displayName": "WYSIWYG editor for Kenga views",
+	"description": "Winnie is a WYSIWYG editor for Kenga views",
+	"version": "0.0.1",
+	"publisher": "marat-gainullin",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Visualization"
+	],
+	"activationEvents": [
+		"onCustomEditor:kengaViews.winnie"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/marat-gainullin/vscode-extension-winnie.git"
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"customEditors": [
+			{
+				"viewType": "kengaViews.winnie",
+				"displayName": "Winnie Editor",
+				"selector": [
+					{
+						"filenamePattern": "*.js"
+					}
+				]
+			}
+		],
+		"commands": [
+			{
+				"command": "kengaViews.winnie.openWith",
+				"title": "Edit an ECMAScript 2015 file as a Kenga view",
+				"category": "Edit"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -w -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^12.12.0",
+		"@types/vscode": "^1.46.0",
+		"@typescript-eslint/eslint-plugin": "^3.0.2",
+		"@typescript-eslint/parser": "^3.0.2",
+		"eslint": "^7.1.0",
+		"typescript": "^4.0.2"
+	}
+}
