@@ -1,0 +1,210 @@
+.p-winnie-hints {
+  color: var(--vscode-editorHint-foreground);
+  font-size: var(--vscode-font-size);
+  font-family: var(--vscode-font-family);
+  font-weight: var(--vscode-font-weight);
+}
+
+.p-winnie-hint {
+  padding: 0;
+}
+
+.p-winnie-widget {
+  outline: 1px dashed var(--vscode-focusBorder);
+  overflow: visible;
+}
+
+.p-winnie-widget-selected {
+  outline: 3px dashed var(--vscode-focusBorder);
+}
+
+.p-winnie-widgets>.p-widget {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.p-winnie-widgets>.p-widget {
+  display: inline-block !important;
+}
+
+.p-winnie-widgets>.p-holy-grail-column,
+.p-winnie-widgets>.p-holy-grail-row,
+.p-winnie-widgets>.p-tabs,
+.p-winnie-widgets>.p-box-vertical,
+.p-winnie-widgets>.p-box-vertical {
+  display: inline-flex !important;
+}
+
+.p-winnie-decoration {
+  z-index: 550;
+}
+
+.p-winnie-selection-rect {
+  border: 1px dashed var(--vscode-focusBorder);
+  z-index: 600;
+}
+
+.p-widget {
+  border-radius: 3px;
+  background-color: var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+  border-color: var(--vscode-tab-border);
+  font-size: var(--vscode-font-size);
+  font-family: var(--vscode-font-family);
+  font-weight: var(--vscode-font-weight);
+}
+
+.p-toolbar {
+  background: var(--vscode-background);
+}
+
+button {
+  border-width: 1px;
+}
+
+.p-toolbar>button>.p-image:before {
+  color: var(--vscode-foreground);
+}
+
+.p-toolbar>button:disabled>.p-image:before {
+  color: var(--vscode-disabledForeground);
+}
+
+.p-toolbar>button:hover {
+  background-color: var(--vscode-toolbar-hoverBackground);
+  cursor: pointer;
+}
+
+.p-menu {
+  border-radius: 5px;
+  z-index: 600;
+}
+
+.p-menu-separator {
+  border-top-color: var(--vscode-menu-separatorBackground);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.p-menu-item {
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.p-menu-item>.p-paragraph {
+  border-left-color: var(--vscode-menu-separatorBackground);
+  font-size: var(--vscode-font-size);
+}
+
+.p-menu-item,
+.p-menu-item>.p-image,
+.p-menu-item:after {
+  color: var(--vscode-menu-foreground);
+  background-color: var(--vscode-menu-background);
+}
+
+.p-menu-item:hover,
+.p-menu-item:hover>.p-image,
+.p-menu-item:hover:after {
+  color: var(--vscode-menu-selectionForeground);
+  background-color: var(--vscode-menu-selectionBackground);
+}
+
+.p-menu-item[disabled],
+.p-menu-item[disabled]>.p-image,
+.p-menu-item[disabled]:after {
+  color: var(--vscode-disabledForeground);
+  background-color: var(--vscode-menu-background);
+  cursor: default;
+}
+
+.p-grid-section {
+  background-color: var(--vscode-editor-background);
+}
+
+.p-grid-cell {
+  border-color: var(--vscode-tree-tableColumnsBorder);
+  font-size: var(--vscode-font-size);
+}
+
+.p-grid-header-cell {
+  background-color: var(--vscode-sideBarSectionHeader-background);
+  font-size: var(--vscode-font-size);
+  border-color: var(--vscode-tree-tableColumnsBorder);
+}
+
+.p-grid-selected-row {
+  background-color: var(--vscode-editor-selectionBackground);
+}
+
+.p-grid-cell-focused {
+  background-color: var(--vscode-editor-selectionHighlightBackground);
+}
+
+.p-grid-cell>.p-winnie-cell-editor {
+  background: transparent;
+}
+
+.p-winnie-widgets>.p-widget {
+  background-color: var(--vscode-editor-background);
+}
+
+.p-widget-category-header {
+  background-color: var(--vscode-sideBarSectionHeader-background);
+  color: var(--vscode-sideBarSectionHeader-foreground);
+  margin: 0;
+}
+
+.p-widget-category-header>.p-paragraph,
+.p-widget-category-header>.p-image {
+  color: var(--vscode-sideBarSectionHeader-foreground);
+  font-size: var(--vscode-font-size);
+}
+
+
+.p-widget-category-header:hover > .p-paragraph {
+  color: var(--vscode-sideBarSectionHeader-foreground);
+}
+
+.p-widget-palette-item>.p-paragraph {
+  color: var(--vscode-foreground);
+  font-size: var(--vscode-font-size);
+}
+
+.p-widget-palette-item>.p-image {
+  color: var(--vscode-foreground);
+  font-size: 18px;
+}
+
+.p-widget-palette-item:hover {
+  background-color: var(--vscode-toolbar-hoverBackground);
+  cursor: grab;
+}
+
+
+.p-widget-palette-item:hover > .p-paragraph,
+.p-widget-palette-item:hover > .p-image {
+  color: var(--vscode-foreground);
+}
+
+
+.p-widget-palette-item:active>.p-image,
+.p-widget-palette-item:active>.p-paragraph {
+  cursor: grabbing;
+}
+
+.p-tab-caption {
+  border-color: var(--vscode-tab-border);
+}
+
+.p-tab-caption,
+.p-tab-caption:hover {
+  background-color: var(--vscode-tab-inactiveBackground);
+  color: var(--vscode-tab-inactiveForeground);
+}
+
+.p-tab-caption-selected,
+.p-tab-caption-selected:hover {
+  background-color: var(--vscode-tab-activeBackground);
+  color: var(--vscode-tab-activeForeground);
+}

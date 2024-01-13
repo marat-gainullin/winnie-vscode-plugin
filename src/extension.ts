@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { ViewEditorProvider } from './viewEditor';
+import { ViewEditorProvider } from './view-editor-provider';
 
 export function activate(context: vscode.ExtensionContext) {
 	// Register custom editor provider
