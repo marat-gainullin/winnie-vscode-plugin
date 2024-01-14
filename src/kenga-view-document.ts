@@ -128,7 +128,6 @@ export class KengaViewDocument implements vscode.CustomDocument {
 	 * This fires an event to notify VS Code that the document has been edited.
 	 */
 	editHappend(label: string, webview: vscode.Webview) {
-		vscode.DocumentPasteEdit
 		this._onDidChange.fire({
 			label,
 			undo: () => {

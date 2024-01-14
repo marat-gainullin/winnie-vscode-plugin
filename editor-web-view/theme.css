@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+.p-winnie-explorer,
+.p-winnie-properties {
+  outline: none;
+}
+
 .p-winnie-widget {
   outline: 1px dashed var(--vscode-focusBorder);
   overflow: visible;
