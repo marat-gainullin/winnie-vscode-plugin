@@ -15,7 +15,7 @@
 		"type": "git",
 		"url": "https://github.com/marat-gainullin/vscode-extension-winnie.git"
 	},
-	"main": "./out/extension.js",
+	"main": "./dist/extension.js",
 	"contributes": {
 		"customEditors": [
 			{
@@ -34,7 +34,7 @@
 		"commands": [
 			{
 				"command": "kengaViews.winnie.openWith",
-				"title": "Edit an ECMAScript 2015 file as a Kenga view",
+				"title": "Edit an ECMAScript 2015 or a TypeScript file as a Kenga view",
 				"category": "Edit"
 			}
 		]
