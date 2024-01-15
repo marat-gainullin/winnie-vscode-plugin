@@ -2,11 +2,12 @@
 	"name": "winnie-editor",
 	"displayName": "WYSIWYG editor for Kenga views",
 	"description": "Winnie is a WYSIWYG editor for Kenga views",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"publisher": "marat-gainullin",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
+	"icon": "winnie.png",
 	"categories": [
 		"Visualization"
 	],
@@ -22,13 +23,12 @@
 				"viewType": "kengaViews.winnie",
 				"displayName": "Winnie Editor",
 				"selector": [
-					{
-						"filenamePattern": "*.js"
-					},
-					{
-						"filenamePattern": "*.ts"
-					}
-				]
+					{"filenamePattern": "*.kenga.js"},
+					{"filenamePattern": "*.kenga.ts"},
+					{"filenamePattern": "*.view.js"},
+					{"filenamePattern": "*.view.ts"}
+				],
+				"priority": "option"
 			}
 		],
 		"commands": [
@@ -46,8 +46,7 @@
 		"watch": "tsc -w -p ./"
 	},
 	"dependencies": {
-		"@babel/traverse": "^7.15.4",
-		"winnie": "0.1.56"
+		"@babel/traverse": "^7.15.4"
 	},
 	"devDependencies": {
 		"@types/node": "^12.12.0",

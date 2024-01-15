@@ -148,6 +148,14 @@ button {
 
 .p-grid-cell>.p-winnie-cell-editor {
   background: transparent;
+  color: var(--vscode-editor-foreground);
+  font-size: var(--vscode-font-size);
+  font-family: var(--vscode-font-family);
+  font-weight: var(--vscode-font-weight);
+}
+
+.p-winnie-cell-editor>option {
+  background-color: var(--vscode-editor-background);
 }
 
 .p-winnie-widgets>.p-widget {
