@@ -60,7 +60,8 @@
     width: 30px;
     right: 0px;
 }
-.p-error-popup {
+.p-error-popup,
+.p-popup {
     position: absolute;
 }
 .p-image-paragraph > .p-image,
@@ -209,6 +210,12 @@
     content: ' ';
     display: inline-block;
     position: absolute;
+}
+.p-lookup-unmatch {
+    display: none;
+}
+.p-lookup-items {
+    box-sizing: border-box;    
 }
 .p-flow {
     display: inline-flex;
@@ -575,9 +582,6 @@
     line-height: normal;
     border: 1px solid lightgray;
     cursor: pointer;
-}
-.p-menu {
-    position: absolute;
 }
 input[type="checkbox"],
 input[type="radio"] {
