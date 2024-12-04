@@ -43,7 +43,8 @@
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"lint": "eslint . --ext .ts,.tsx",
-		"watch": "tsc -w -p ./"
+		"watch": "tsc -w -p ./",
+		"publish": "vsce publish"
 	},
 	"dependencies": {
 		"@babel/traverse": "^7.15.4"
