@@ -2,7 +2,7 @@
 	"name": "winnie-editor",
 	"displayName": "WYSIWYG editor for Kenga views",
 	"description": "Winnie is a WYSIWYG editor for Kenga views",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"publisher": "marat-gainullin",
 	"engines": {
 		"vscode": "^1.46.0"
